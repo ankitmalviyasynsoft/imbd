@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Provider from "./Provider";
 import Navbar from "@/components/header/Navbar";
+import SearchBox from "@/components/searchBox/SearchBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Provider>
           <Header />
           <Navbar />
+          <SearchBox />
           {children}
         </Provider>
       </body>
